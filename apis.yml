@@ -2,16 +2,21 @@ aid: tattle
 name: Tattle
 description: >-
   Tattle is an AI-powered Customer Experience Improvement (CXI) platform built
-  for hospitality, trusted by 250+ restaurant brands including MOD Pizza,
-  Hooters, and The Halal Guys. It collects real-time guest feedback at the point
-  of transaction across ordering channels, then turns it into actionable
-  insights with smart analytics, an AI Coach that generates action plans for
-  operators, guest-recovery tools, cross-platform review management, and
-  item-level menu performance tracking. Tattle markets an open, REST-based API
-  and integrates with 35+ restaurant technology platforms such as Olo, Toast,
-  PAR Brink, Square, Punchh, and Paytronix. Public, self-service API
-  documentation is not published; the open API and custom integrations are
-  arranged through Tattle's team.
+  for hospitality, supporting 220+ restaurant and hospitality brands across
+  11,000+ locations globally — including Chili's, MOD Pizza, Hooters, Freddy's,
+  Mellow Mushroom, and The Halal Guys. It collects real-time guest feedback at
+  the point of transaction across ordering channels, then turns it into
+  actionable insights with smart analytics, an AI Coach that delivers each
+  general manager monthly action plans tied to their own guest feedback and SOPs,
+  guest-recovery tools, cross-platform review management, and item-level menu
+  performance tracking. Pricing is per location per month, starting at
+  $59/location. Tattle markets an open, REST-based, API-first design and
+  integrates with 34+ restaurant technology platforms across POS, online
+  ordering, loyalty/CRM, and kiosk categories — such as Olo, Toast, PAR Brink,
+  Square, Punchh, Paytronix, Revel, Thanx, and Checkmate. Public, self-service
+  API reference documentation is not published; the open API and custom
+  integrations are coordinated through Tattle's integrations team
+  (customersuccess@gettattle.com).
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
@@ -23,17 +28,18 @@ tags:
   - Integrations
 url: https://raw.githubusercontent.com/api-evangelist/tattle/refs/heads/main/apis.yml
 created: '2026-06-02'
-modified: '2026-06-02'
+modified: '2026-06-03'
 specificationVersion: '0.19'
 apis:
   - aid: tattle:rest-api
     name: Tattle Open API
     description: >-
-      Tattle describes an open, REST-based API and an API-first design enabling
-      two-way data synchronization with restaurant POS, online ordering,
-      loyalty, and kiosk systems so brands can incorporate Tattle into their
+      Tattle describes an open, REST-based API and an API-first design ("Modern
+      REST APIs with comprehensive documentation for custom integrations")
+      enabling two-way data synchronization with restaurant POS, online ordering,
+      loyalty/CRM, and kiosk systems so brands can incorporate Tattle into their
       tech stack. The company also builds custom integrations on request. No
-      public API reference, base URL, or authentication documentation is
+      public API reference, base URL, authentication, or webhook documentation is
       published; access is coordinated through Tattle's integrations team.
     humanURL: https://get.tattleapp.com/integrations/
     tags:
@@ -51,6 +57,10 @@ common:
     url: https://gettattle.com/dashboard
   - type: Pricing
     url: https://get.tattleapp.com/pricing/
+  - type: Integrations
+    url: https://get.tattleapp.com/integrations/
+  - type: GitHub
+    url: https://github.com/gettattle
   - type: Support
     url: https://get.tattleapp.com/resources/faq/
   - type: Blog
@@ -59,6 +69,12 @@ common:
     url: https://www.linkedin.com/company/gettattle
   - type: X
     url: https://x.com/gettattle
+  - type: Plans
+    url: plans/tattle-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/tattle-rate-limits.yml
+  - type: FinOps
+    url: finops/tattle-finops.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

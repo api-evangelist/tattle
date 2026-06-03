@@ -1,0 +1,89 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Tattle
+providerId: tattle
+created: '2026-06-03'
+modified: '2026-06-03'
+reconciled: true
+tags:
+  - FinOps
+  - FOCUS
+  - Restaurant
+  - Guest Feedback
+  - Subscription
+description: >-
+  FOCUS-aligned FinOps for Tattle: a per-location, per-month SaaS subscription
+  with volume discounts tiered by location count and custom enterprise pricing
+  above 200 locations, plus an optional reputation management add-on.
+sources:
+  - https://get.tattleapp.com/pricing/
+  - https://get.tattleapp.com/integrations/
+  - https://www.finops.org/framework/
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Tattle, Inc.
+serviceCategory: Customer Experience / Guest Feedback (SaaS)
+billingModel:
+  pricingCategory: Tiered Subscription
+  billingFrequency: Monthly
+  billingCurrency: USD
+  chargeCategories:
+    - Purchase
+    - Tax
+    - Adjustment
+    - Credit
+focusColumns:
+  ServiceName: Tattle Customer Experience Improvement Platform
+  ServiceCategory: Customer Experience / Guest Feedback (SaaS)
+  ProviderName: Tattle
+  PublisherName: Tattle, Inc.
+  InvoiceIssuerName: Tattle, Inc.
+  BillingCurrency: USD
+  ChargeCategory: Purchase
+meters:
+  - name: location_subscription
+    unit: location-month
+    aggregation: sum
+    dimensions:
+      - location
+      - tier
+  - name: reputation_management_addon
+    unit: location-month
+    aggregation: sum
+    dimensions:
+      - location
+  - name: api_access
+    unit: varies
+    aggregation: count
+    dimensions:
+      - integration
+principles:
+  - name: Visibility
+    description: >-
+      Consumption is observed through the Tattle dashboard, where per-location
+      activity, survey volume, analytics, and AI Coach action plans surface;
+      there is no public usage/billing API, so cost visibility is dashboard- and
+      invoice-driven.
+  - name: Allocation
+    description: >-
+      Spend is naturally allocated by location, since billing is per location
+      per month — multi-location operators can attribute cost directly to each
+      unit and roll up by brand or region within multi-location management.
+  - name: Optimization
+    description: >-
+      The primary cost lever is location count: the per-location rate steps down
+      across volume tiers ($125 → $100 → $85 → $65) as units grow, with custom
+      pricing above 200 locations. Operators optimize by consolidating under one
+      account to reach lower tiers and by adding the reputation module only where
+      needed.
+  - name: Accountability
+    description: >-
+      Account owners and finance contacts manage the subscription tier and
+      add-ons directly with Tattle's customer success team
+      (customersuccess@gettattle.com); plan changes track location growth so
+      spend stays aligned to the active footprint.

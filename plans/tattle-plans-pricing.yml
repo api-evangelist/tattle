@@ -1,0 +1,174 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Tattle
+providerId: tattle
+created: '2026-06-03'
+modified: '2026-06-03'
+reconciled: true
+tags:
+  - Restaurant
+  - Guest Feedback
+  - Customer Experience
+  - Subscription
+  - Per Location
+description: >-
+  Tattle prices its Customer Experience Improvement platform on a per-location,
+  per-month subscription basis with volume discounts tiered by the number of
+  units (locations) under management. All tiers include the same feature set —
+  unlimited surveys, real-time analytics, AI-powered insights, the guest
+  recovery system, multi-location management, 35+ integrations, enterprise
+  security, dedicated support, and API access — with the per-location price
+  decreasing as location count grows. Operators with 201+ units receive custom
+  enterprise pricing arranged with the Tattle team. Billing is monthly and
+  plans can be adjusted as location count changes. A reputation management
+  module is available as a separate add-on.
+sources:
+  - https://get.tattleapp.com/pricing/
+  - https://get.tattleapp.com/
+plans:
+  - id: tattle-5-10-units
+    name: 5-10 Units
+    type: subscription
+    description: Per-location plan for new concepts running 5 to 10 locations.
+    entries:
+      - label: Per Location Subscription
+        name: per_location_subscription
+        type: subscription
+        metric: location
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: '1'
+        price: '$125/mo Per Location'
+        userMultiplied: true
+    elements:
+      - name: Unlimited Surveys
+      - name: Real-Time Analytics
+      - name: AI-Powered Insights
+      - name: Guest Recovery System
+      - name: Multi-Location Management
+      - name: 35+ Integrations
+      - name: Enterprise Security (SOC2)
+      - name: Dedicated Support
+      - name: API Access
+  - id: tattle-11-20-units
+    name: 11-20 Units
+    type: subscription
+    description: Per-location plan for growing chains running 11 to 20 locations.
+    entries:
+      - label: Per Location Subscription
+        name: per_location_subscription
+        type: subscription
+        metric: location
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: '1'
+        price: '$100/mo Per Location'
+        userMultiplied: true
+    elements:
+      - name: Unlimited Surveys
+      - name: Real-Time Analytics
+      - name: AI-Powered Insights
+      - name: Guest Recovery System
+      - name: Multi-Location Management
+      - name: 35+ Integrations
+      - name: Enterprise Security (SOC2)
+      - name: Dedicated Support
+      - name: API Access
+  - id: tattle-21-50-units
+    name: 21-50 Units
+    type: subscription
+    description: Per-location plan for established brands running 21 to 50 locations.
+    entries:
+      - label: Per Location Subscription
+        name: per_location_subscription
+        type: subscription
+        metric: location
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: '1'
+        price: '$85/mo Per Location'
+        userMultiplied: true
+    elements:
+      - name: Unlimited Surveys
+      - name: Real-Time Analytics
+      - name: AI-Powered Insights
+      - name: Guest Recovery System
+      - name: Multi-Location Management
+      - name: 35+ Integrations
+      - name: Enterprise Security (SOC2)
+      - name: Dedicated Support
+      - name: API Access
+  - id: tattle-51-200-units
+    name: 51-200 Units
+    type: subscription
+    description: Per-location plan for large operations running 51 to 200 locations.
+    entries:
+      - label: Per Location Subscription
+        name: per_location_subscription
+        type: subscription
+        metric: location
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: '1'
+        price: '$65/mo Per Location'
+        userMultiplied: true
+    elements:
+      - name: Unlimited Surveys
+      - name: Real-Time Analytics
+      - name: AI-Powered Insights
+      - name: Guest Recovery System
+      - name: Multi-Location Management
+      - name: 35+ Integrations
+      - name: Enterprise Security (SOC2)
+      - name: Dedicated Support
+      - name: API Access
+  - id: tattle-201-plus-units
+    name: 201+ Units
+    type: enterprise
+    description: Custom enterprise pricing for operators running 201 or more locations.
+    entries:
+      - label: Custom Enterprise Pricing
+        name: custom_enterprise_pricing
+        type: subscription
+        metric: location
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: '1'
+        price: 'Custom Pricing'
+        userMultiplied: true
+    elements:
+      - name: Unlimited Surveys
+      - name: Real-Time Analytics
+      - name: AI-Powered Insights
+      - name: Guest Recovery System
+      - name: Multi-Location Management
+      - name: 35+ Integrations
+      - name: Enterprise Security (SOC2)
+      - name: Dedicated Support
+      - name: API Access
+      - name: White-Glove Onboarding
+  - id: tattle-reputation-management-addon
+    name: Reputation Management Add-On
+    type: subscription
+    description: >-
+      Optional reputation management module available separately from the core
+      per-location subscription.
+    entries:
+      - label: Reputation Management Module
+        name: reputation_management_module
+        type: subscription
+        metric: location
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: '1'
+        price: 'contact sales'
+        userMultiplied: true
+    elements:
+      - name: Cross-Platform Review Management

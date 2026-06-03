@@ -1,0 +1,56 @@
+specification: API Commons Rate Limits
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
+provider: Tattle
+providerId: tattle
+created: '2026-06-03'
+modified: '2026-06-03'
+reconciled: false
+tags:
+  - Rate Limiting
+  - Restaurant
+  - Guest Feedback
+  - Integrations
+description: >-
+  Tattle markets an open, REST-based, API-first platform but does not publish a
+  public API reference, developer portal, or rate-limiting documentation. No
+  per-second, per-minute, per-key, or per-IP request limits, throttling
+  behavior, or response headers are documented publicly. API access is included
+  as a feature across all subscription tiers and is provisioned per location;
+  custom and partner integrations are coordinated through Tattle's integrations
+  team (customersuccess@gettattle.com), which is where any applicable request
+  limits would be communicated. The entries below are descriptive placeholders
+  pending access to partner documentation and should not be treated as verified
+  numeric limits.
+sources:
+  - https://get.tattleapp.com/integrations/
+  - https://get.tattleapp.com/pricing/
+responseCodes:
+  throttled: 429
+limits:
+  - name: API request rate (open / partner API)
+    scope: account
+    metric: varies
+    limit: 'Not published — coordinate limits via Tattle integrations team'
+    notes: >-
+      No public rate-limit documentation exists. Tattle describes "Modern REST
+      APIs with comprehensive documentation for custom integrations" but the
+      reference is gated behind partner onboarding.
+  - name: Location entitlement (subscription scope)
+    scope: account
+    metric: varies
+    limit: 'Per-location subscription; see plans/tattle-plans-pricing.yml'
+    notes: >-
+      Platform access is scoped and billed per location rather than by API
+      request volume. This is a commercial entitlement, not a request-rate
+      throttle.
+policies:
+  - name: Partner-coordinated limits
+    description: >-
+      Any request-rate or concurrency limits are communicated during partner
+      integration onboarding rather than published in a public developer portal.
+  - name: Recommended backoff
+    description: >-
+      With no documented limits, integrators should apply conservative
+      exponential backoff on 429/5xx responses and confirm thresholds with the
+      Tattle integrations team before high-volume use.
