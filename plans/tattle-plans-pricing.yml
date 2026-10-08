@@ -177,3 +177,59 @@ plans:
         userMultiplied: true
     elements:
       - name: Cross-Platform Review Management
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units:
+  - object
+  plans:
+  - name: 5-10 Units
+    access: other
+    model: subscription
+    model_how: stated
+    units:
+    - object
+    periods:
+    - month
+  - name: 11-20 Units
+    access: other
+    model: subscription
+    model_how: stated
+    units:
+    - object
+    periods:
+    - month
+  - name: 21-50 Units
+    access: other
+    model: subscription
+    model_how: stated
+    units:
+    - object
+    periods:
+    - month
+  - name: 51-200 Units
+    access: other
+    model: subscription
+    model_how: stated
+    units:
+    - object
+    periods:
+    - month
+  - name: 201+ Units
+    access: enterprise
+    model: subscription
+    model_how: derived
+    units:
+    - object
+    periods:
+    - month
+  - name: Reputation Management Add-On
+    access: other
+    model: subscription
+    model_how: stated
+    units:
+    - object
+    periods:
+    - month
