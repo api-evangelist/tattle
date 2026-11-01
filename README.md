@@ -1,4 +1,4 @@
-# Tattle (tattle)
+# Tattle
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,70 +66,103 @@
 
 Tattle is an AI-powered Customer Experience Improvement (CXI) platform built for hospitality, supporting 220+ restaurant and hospitality brands across 11,000+ locations globally — including Chili's, MOD Pizza, Hooters, Freddy's, Mellow Mushroom, and The Halal Guys. It collects real-time guest feedback at the point of transaction across ordering channels, then turns it into actionable insights with smart analytics, an AI Coach that delivers each general manager monthly action plans tied to their own guest feedback and SOPs, guest-recovery tools, cross-platform review management, and item-level menu performance tracking. Pricing is per location per month, starting at $59/location. Tattle markets an open, REST-based, API-first design and integrates with 34+ restaurant technology platforms across POS, online ordering, loyalty/CRM, and kiosk categories — such as Olo, Toast, PAR Brink, Square, Punchh, Paytronix, Revel, Thanx, and Checkmate. Public, self-service API reference documentation is not published; the open API and custom integrations are coordinated through Tattle's integrations team (customersuccess@gettattle.com).
 
-**URL:** [Visit APIs.json URL](https://get.tattleapp.com/)
+**Areas:** Restaurant · Guest Feedback · Customer Experience · Review Management · Analytics · Integration
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Tattle on APIs.io
 
-## Tags:
+Everything profiled for Tattle is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/tattle/](https://apis.io/providers/tattle/)** — or go straight to one of the APIs or properties below.
 
- - Restaurant, Guest Feedback, Customer Experience, Review Management, Analytics, Integrations
+### APIs (1)
 
-## Timestamps
+- [Tattle Open API](https://apis.io/apis/tattle/rest-api/) — Tattle describes an open, REST-based API and an API-first design ("Modern REST APIs with comprehensive documentation for custom integrations") enabling…
 
-- **Created:** 2026-06-02
-- **Modified:** 2026-06-03
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Tattle Open API
-Tattle describes an open, REST-based API and an API-first design ("Modern REST APIs with comprehensive documentation for custom integrations") enabling two-way data synchronization with restaurant POS, online ordering, loyalty/CRM, and kiosk systems so brands can incorporate Tattle into their tech stack. The company also builds custom integrations on request. No public API reference, base URL, authentication, or webhook documentation is published; access is coordinated through Tattle's integrations team.
+#### Security (1)
 
-**Human URL:** [https://get.tattleapp.com/integrations/](https://get.tattleapp.com/integrations/)
+Authentication, trust centre, and vulnerability disclosure.
 
-#### Tags:
+- [Tattle Domain Security](https://apis.io/security/tattle/tattle-domain-security/)
 
- - Integrations, Guest Feedback
+#### Plans and pricing (1)
 
-#### Properties
+Published plans, tiers and prices.
 
-- [Documentation](https://get.tattleapp.com/integrations/)
+- [Tattle Plans Pricing](https://apis.io/plans/tattle/tattle-plans-pricing/)
 
-## Common Properties
+#### Rate limits (1)
+
+Published request limits.
+
+- [Tattle Rate Limits](https://apis.io/rate-limits/tattle/tattle-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Tattle Finops](https://apis.io/finops/tattle/tattle-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://get.tattleapp.com/)
 - [Documentation](https://get.tattleapp.com/integrations/)
-- [Login](https://gettattle.com/dashboard)
 - [Pricing](https://get.tattleapp.com/pricing/)
-- [Integrations](https://get.tattleapp.com/integrations/)
-- [GitHub](https://github.com/gettattle)
 - [Support](https://get.tattleapp.com/resources/faq/)
 - [Blog](https://get.tattleapp.com/blog/)
-- [LinkedIn](https://www.linkedin.com/company/gettattle)
-- [X](https://x.com/gettattle)
-- [Plans](plans/tattle-plans-pricing.yml)
-- [RateLimits](rate-limits/tattle-rate-limits.yml)
-- [FinOps](finops/tattle-finops.yml)
 
-## Artifacts
+## API Evangelist rating
 
-Machine-readable API specifications organized by format.
+**Kin Score 14.0** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-> Tattle markets an open, REST-based API but does not publish a public API reference, developer portal, or OpenAPI/AsyncAPI specification. The open API and custom integrations are arranged through Tattle's integrations team, so no machine-readable interface specs are generated here. The artifacts below describe Tattle's published commercial surface.
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 16.7 |
+| Access clarity | 25.0 |
 
-### Plans
+**Agent readiness 0.6** — human-only
 
-- [Tattle Plans & Pricing](plans/tattle-plans-pricing.yml) — API Commons Plans 0.1: per-location tiered subscription (5 tiers + reputation management add-on)
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-### Rate Limits
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
 
-- [Tattle Rate Limits](rate-limits/tattle-rate-limits.yml) — API Commons Rate Limits 0.1: no public request limits published (partner-coordinated)
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/tattle/](https://apis.io/providers/tattle/).
 
-### FinOps
+## How this profile is made
 
-- [Tattle FinOps](finops/tattle-finops.yml) — FinOps Framework 1.0 / FOCUS 1.3: per-location SaaS subscription billing model
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Maintainers
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Tattle: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-**FN:** Kin Lane
+## Open an issue
 
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/tattle/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
